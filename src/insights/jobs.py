@@ -17,25 +17,15 @@ def get_unique_job_types(path: str) -> List[str]:
     jobs = read(path)
     uniques_types = []
     for job in jobs:
-        if job["job_type"] not in uniques_types:
-            uniques_types.append(job["job_type"])
+        if job['job_type'] not in uniques_types:
+            uniques_types.append(job['job_type'])
     return uniques_types
 
 
-
 def filter_by_job_type(jobs: List[Dict], job_type: str) -> List[Dict]:
-    """Filters a list of jobs by job_type
+    jobs_filtered = []
 
-    Parameters
-    ----------
-    jobs : list
-        List of jobs to be filtered
-    job_type : str
-        Job type for the list filter
-
-    Returns
-    -------
-    list
-        List of jobs with provided job_type
-    """
-    raise NotImplementedError
+    for job in jobs:
+        if job['job_type'] == job_type:
+            jobs_filtered.append(job)
+    return jobs_filtered
