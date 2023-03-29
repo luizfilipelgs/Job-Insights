@@ -14,7 +14,12 @@ def read(path: str) -> List[Dict]:
 
 
 def get_unique_job_types(path: str) -> List[str]:
-    ...
+    jobs = read(path)
+    uniques_types = []
+    for job in jobs:
+        if job["job_type"] not in uniques_types:
+            uniques_types.append(job["job_type"])
+    return uniques_types
 
 
 
