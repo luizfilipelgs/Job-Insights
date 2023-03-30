@@ -6,14 +6,14 @@ def get_max_salary(path: str) -> int:
     data = read(path)
     max_salary_list = [int(salary['max_salary']) for salary in data
                        if salary['max_salary'].isnumeric()]
-    print(max_salary_list)
     return max(max_salary_list)
 
 
 def get_min_salary(path: str) -> int:
     data = read(path)
-    min_salary_list = [salary for salary in data]
-    return min(min_salary_list, key=int)
+    min_salary_list = [int(salary['min_salary']) for salary in data
+                       if salary['min_salary'].isnumeric()]
+    return min(min_salary_list)
 
 
 def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
