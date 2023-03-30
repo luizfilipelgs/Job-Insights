@@ -9,7 +9,6 @@ def get_unique_industries(path: str) -> List[str]:
     for ind in data:
         if "" != ind["industry"] not in unique_industries:
             unique_industries.append(ind["industry"])
-    print(unique_industries)
     return unique_industries
 
 
