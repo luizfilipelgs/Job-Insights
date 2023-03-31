@@ -12,7 +12,7 @@
 # Tecnologias utilizadas <a name="tecnologias"></a>
 - [**Python**](https://www.python.org/)
 - [**Pytest**](https://docs.pytest.org/en/7.2.x/)
-- [**Flask**](hhttps://flask.palletsprojects.com/en/2.2.x//)
+- [**Flask**](https://flask.palletsprojects.com/en/2.2.x/)
 
 # Orientações <a name="orientacoes"></a>
 
@@ -25,15 +25,19 @@
   2. Entre na pasta do repositório que você acabou de clonar:
   * `cd Job-Insights-Python`
 
-  3. Crie o ambiente virtual para o projeto
+  3. Crie o ambiente virtual para o projeto e ativeo 
 
   - `python3 -m venv .venv && source .venv/bin/activate`
+
+  4. Caso já se tenha clonado e criado o ambiente virtual antes, apenas ative com:
+
+  - `source .venv/bin/activate`
   
-  4. Instale as dependências
+  5. Instale as dependências
 
   - `python3 -m pip install -r dev-requirements.txt`
 
-  5. Inicialize a aplicação.
+  6. Inicialize a aplicação.
   * digite o comando `flask run` 
   * Acesse o site gerado pelo Flask em `http://localhost:5000`
   
