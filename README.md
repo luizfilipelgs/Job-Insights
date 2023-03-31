@@ -1,13 +1,40 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Boas vindas ao repositório do projeto Job Insights !
+ # O que foi desenvolvido  👨‍💻 
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+  Neste projeto, foram implementadas análises a partir de um conjunto de dados sobre empregos, onde suas implementações foram incorporadas a um aplicativo web com Flask já desenvolvido. Tambem foram escritos testes para a implementação de uma análise de dados.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+  Os dados foram extraídos do site Glassdoor e obtidos através do Kaggle, uma plataforma disponibilizando conjuntos de dados para cientistas de dados. 
+  
+  Durante o projeto, habilidades como utilizar o terminal interativo do Python, estruturas condicionais e de repetição, funções built-in do Python, tratamento de exceções, manipulação de arquivos, escrever funções, escrever testes com Pytest, escrever seus próprios módulos e importá-los em outros códigos foram trabalhadas.
+ 
+![Apresentação](/job.gif)
+
+# Tecnologias utilizadas <a name="tecnologias"></a>
+- [**Python**](https://www.python.org/)
+- [**Pytest**](https://docs.pytest.org/en/7.2.x/)
+- [**Flask**](hhttps://flask.palletsprojects.com/en/2.2.x//)
+
+# Orientações <a name="orientacoes"></a>
+
+<details>
+<summary><strong> 🔰 Iniciando o projeto e Comandos Úteis</strong></summary><br />
+
+  1. Clone o repositório
+  * `git clone git@github.com:luizfilipelgs/Job-Insights-Python.git`
+
+  2. Entre na pasta do repositório que você acabou de clonar:
+  * `cd Job-Insights-Python`
+
+  3. Crie o ambiente virtual para o projeto
+
+  - `python3 -m venv .venv && source .venv/bin/activate`
+  
+  4. Instale as dependências
+
+  - `python3 -m pip install -r dev-requirements.txt`
+
+  5. Inicialize a aplicação.
+  * digite o comando `flask run` 
+  * Acesse o site gerado pelo Flask em `http://localhost:5000`
+  
+</details>
